@@ -114,19 +114,26 @@ form div + div {
 }
 
 input.button:hover {
-	color: #27ae60;
-	background: white;
+	color: white;
+	background: #27ae60;
 	text-align: center;
-	font-weight: bold;
 	border-color: #27ae60;
 }
 
-input.button2 {
-	background-color: red;
-	border: 3px solid red;
+input.button {
+	color: #27ae60;
+	background: white;
+	text-align: center;
+	border-color: #27ae60;
 }
 
 input.button2:hover {
+	background-color: red;
+	border: 1px solid red;
+	color: white;
+}
+
+input.button2 {
 	color: red;
 	background: white;
 	text-align: center;

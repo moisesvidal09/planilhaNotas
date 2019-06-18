@@ -62,12 +62,19 @@ input.button {
 }
 
 input.button:hover {
+	color: white;
+	background: #27ae60;
+	text-align: center;
+	border-color: #27ae60;
+}
+
+input.button {
 	color: #27ae60;
 	background: white;
 	text-align: center;
-	font-weight: bold;
 	border-color: #27ae60;
 }
+
 
 input.button:focus {
 	outline: 0;
