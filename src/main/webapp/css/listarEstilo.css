@@ -1,0 +1,80 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap')
+	;
+
+body {
+	font-family: 'Roboto Slab', serif;
+	background:
+		url("https://barcelonasuperficies.com.br/wp-content/uploads/2017/03/seguranca-na-escola-veja-5-praticas-para-melhorar-esse-fator-740x370.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+label {
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	font-size: 14px;
+	border: none;
+}
+
+th {
+	background: linear-gradient(-180deg, #4FE78E 0%, #27ae60 100%);
+	color: white;
+}
+
+.sample, td, table, th {
+	border: none;
+}
+
+table {
+	border-spacing: 0px;
+	background: white;
+	overflow: hidden;
+	border-collapse: separate;
+	border: solid #ccc 1px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	border: 1px solid;
+}
+
+td {
+	border-bottom: 1px solid #D5D5D5;
+}
+
+input {
+	color: white;
+	width: 150px;
+	height: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 3px solid #27ae60;
+	background: #27ae60;
+	text-align: center;
+	font-weight: bold;
+}
+
+input.button {
+	margin-right: 50px;
+}
+
+input.button:hover {
+	color: #27ae60;
+	background: white;
+	text-align: center;
+	font-weight: bold;
+	border-color: #27ae60;
+}
+
+input.button:focus {
+	outline: 0;
+}
+
+h1 {
+	color: white;
+	background: linear-gradient(-180deg, #4FE78E 0%, #27ae60 100%);
+	border-radius: 50px;
+}

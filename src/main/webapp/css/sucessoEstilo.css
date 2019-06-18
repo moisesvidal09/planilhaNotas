@@ -1,0 +1,12 @@
+body {
+	background:
+		url("https://ep00.epimg.net/elpais/imagenes/2018/01/19/album/1516367128_442397_1516372178_album_normal.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	background: linear-gradient(-180deg, #4FE78E 0%, #27ae60 100%);
+	color: white;
+	border-radius: 50px;
+}

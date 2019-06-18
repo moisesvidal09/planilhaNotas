@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<head>
+<link rel="StyleSheet" type="text/css" href="../../css/listarEstilo.css"></link>
+<script language="javascript" src="../../js/listarNota.js"
+	charset="ISO-8859-1" />
+</head>
+<body>
+	<f:view>
+		<div align="center">
+			<h1>Notas</h1>
+			<h:form id="formulario">
+				<input type="hidden" id="id" name="id" />
+				<br />
+				<h:dataTable border="1" styleClass="sample" id="notas"
+					value="#{notaController.listaNotaBean}" var="nota">
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel  value="Nome Aluno" />
+						</f:facet>
+						<h:inputHidden value="#{nota.id}" />
+						<h:outputLabel value="#{nota.nomeAluno}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Matricula" />
+						</f:facet>
+						<h:outputLabel value="#{nota.matricula}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Data Avaliacao" />
+						</f:facet>
+						<h:outputLabel value="#{nota.dataAvaliacao}">
+							<f:convertDateTime pattern="dd/MM/yyyy" />
+						</h:outputLabel>
+					</h:column>
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Nota" />
+						</f:facet>
+						<h:outputLabel value="#{nota.notaAluno}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Situacao" />
+						</f:facet>
+						<h:outputLabel value="#{nota.situacao}" />
+					</h:column>
+					<h:column>
+						<f:facet name="header">
+							<h:outputLabel value="Selecione" />
+						</f:facet>
+						<h:message for="#{notaController}" />
+						<h:selectOneRadio id="selecionado" 
+							value="#{notaController.notaBean.id}"
+							onclick="selecionarItem('id',this);">
+							<f:selectItem itemValue="#{nota.id}" />
+						</h:selectOneRadio>
+					</h:column>
+				</h:dataTable>
+				<br />
+
+
+				<h:commandButton styleClass="button" value="Novo"
+					action="#{notaController.criar}" />
+				<h:commandButton styleClass="button" value="Editar"
+					action="#{notaController.consultar}"
+					onclick="return validarSelecionado()" />
+				<h:messages />
+			</h:form>
+		</div>
+	</f:view>
+</body>
+
+</html>

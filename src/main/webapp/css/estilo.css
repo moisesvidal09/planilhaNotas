@@ -1,0 +1,140 @@
+@import
+	url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap')
+	;
+
+body {
+	font-family: 'Roboto Slab', serif;
+}
+
+span{
+	color: white;
+    background: red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+label {
+	display: inline-block;
+	width: 250px;
+	text-align: center;
+	font-size: 14px;
+}
+
+select{
+	text-align-last:center; 
+}
+
+input, select{
+	color: white;
+	width: 250px;
+	height: 30px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-radius: 10px;
+	border: 3px solid #27ae60;
+	background: #27ae60;
+	text-align: center;
+	font-weight: bold;
+}
+/*
+form div + div {
+    margin-top: 1em;
+}
+*/
+.card-form {
+	width: 60%;
+	border-radius: 10px;
+	background: white;
+	box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0
+		rgba(0, 0, 0, 0.15);
+	font-family: 'Roboto Slab', serif;
+	margin-top: 50px;
+}
+
+.form-title {
+	color: white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.card-form .form-title {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80px;
+	font-size: 20px;
+	font-weight: bold;
+	background: linear-gradient(-180deg, #4FE78E 0%, #27ae60 100%);
+	border-radius: 10px 10px 0 0;
+}
+
+.card-form .form-body {
+	padding: 10px;
+}
+
+.card-form .form-body .row {
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+}
+
+.card-form .form-body .row input[type="text"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;
+	border: none;
+	font-size: 14px;
+}
+
+.card-form .rule {
+	height: 2px;
+	background: #e8ebed;
+	margin: 0px 35px;
+}
+
+.card-form .form-footer {
+	margin: 0 25px 15px 25px;
+	padding: 15px 10px;
+}
+
+.card-form .form-footer {
+	display: inline-block;
+	line-height: 40px;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 15px;
+	/*background: #27ae60;*/
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.card-form .form-footer {
+	margin-left: 8px;
+}
+
+input.button:hover {
+	color: #27ae60;
+	background: white;
+	text-align: center;
+	font-weight: bold;
+	border-color: #27ae60;
+}
+
+input.button2 {
+	background-color: red;
+	border: 3px solid red;
+}
+
+input.button2:hover {
+	color: red;
+	background: white;
+	text-align: center;
+	font-weight: bold;
+	border-color: red;
+}
+
+input.button2:focus, input.button:focus, select:focus {
+	outline: 0;
+}
+

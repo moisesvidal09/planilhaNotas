@@ -1,0 +1,23 @@
+img {
+	width: 30%;
+	heigth: 30%;
+}
+
+h1 {
+	background: red;
+	border-radius: 50px;
+}
+
+li {
+	background: red;
+	border-radius: 50px;
+}
+
+body {
+	background:
+		url("https://michelliguido.com.br/wp-content/uploads/2018/01/Checklist-como-escolher-a-melhor-escola-para-o-seu-filho-1140x764.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	background-size: cover;
+}

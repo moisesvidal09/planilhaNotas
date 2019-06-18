@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15589967973280" configfile="/trabalho04/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="946" id="pf15589968363981" outlinks="pf15589968363982 pf15589968363983 pf15589968363984 pf15589968363985 pf15589968363986" path="*"/>
+  <nodes xsi:type="pageflow:PFPage" name="xhtml/sucesso.xhtml" x="338" y="178" id="pf15589968363987" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15589968363982" path="/xhtml/sucesso.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="xhtml/falha.xhtml" x="338" y="562" id="pf15589968363988" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15589968363983" path="/xhtml/falha.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="xhtml/vwListarNota.xhtml" id="pf15589968363989" referenceLink="//@navigationRule.0/@navigationCase.2/@toViewId|" inlinks="pf15589968363984" path="/xhtml/vwListarNota.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="xhtml/vwEditarNota.xhtml" id="pf155899683639810" referenceLink="//@navigationRule.0/@navigationCase.3/@toViewId|" inlinks="pf15589968363985" path="/xhtml/vwEditarNota.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="xhtml/vwCriarNota.xhtml" id="pf155899683639811" referenceLink="//@navigationRule.0/@navigationCase.4/@toViewId|" inlinks="pf15589968363986" path="/xhtml/vwCriarNota.xhtml"/>
+  <links id="pf15589968363982" target="pf15589968363987" source="pf15589968363981" outcome="sucesso"/>
+  <links id="pf15589968363983" target="pf15589968363988" source="pf15589968363981" outcome="falha"/>
+  <links id="pf15589968363984" target="pf15589968363989" source="pf15589968363981" outcome="listar"/>
+  <links id="pf15589968363985" target="pf155899683639810" source="pf15589968363981" outcome="editar"/>
+  <links id="pf15589968363986" target="pf155899683639811" source="pf15589968363981" outcome="criar"/>
+</pageflow:Pageflow>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<head>
+<link rel="StyleSheet" type="text/css" href="../../css/estilo.css"></link>
+ <script type="text/javascript" src="../js/criarNota.js"
+	charset="ISO-8859-1" /> 
+<style>
+body {
+	background:
+		url("https://www.eas.pt/wp-content/uploads/2018/06/15895307_1388652754539782_7926353795535907950_n.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+</style>
+
+</head>
+<body>
+	<f:view>
+		<div align="center">
+			<h:form id="formulario">
+				<div class="card-form">
+					<div class="form-title">Alterar Nota</div>
+					<div class="form-body">
+
+						<div class="row">
+							<h:inputHidden id="id" value="#{notaController.notaBean.id}" />
+							<h:outputLabel value="Nome Aluno " />
+							<h:inputText id="nomeAluno"
+								value="#{notaController.notaBean.nomeAluno}" size="50"
+								maxlength="50" />
+						</div>
+
+
+						<div class="row">
+							<h:outputLabel value="Matricula " />
+							<h:inputText id="matricula"
+								value="#{notaController.notaBean.matricula}" size="5"
+								maxlength="5" />
+						</div>
+
+
+						<div class="row">
+							<h:outputLabel value="Data Avaliacao " />
+							<h:inputText id="dataAvaliacao"
+								value="#{notaController.notaBean.dataAvaliacao}">
+								<f:convertDateTime pattern="dd/MM/yyyy" />
+							</h:inputText>
+						</div>
+
+						<div class="row">
+							<h:outputLabel value="Nota  " />
+							<h:inputText id="notaAluno"
+								value="#{notaController.notaBean.notaAluno}" size="5"
+								maxlength="5" />
+						</div>
+
+						<div class="row">
+							<h:outputLabel value="Situação" />
+							<h:selectOneListbox size="1" id="situacao"
+								value="#{notaController.notaBean.situacao}">
+								<f:selectItem itemLabel="Selecione uma opção" itemValue="" />
+								<f:selectItem itemLabel="Aprovado" itemValue="Aprovado" />
+								<f:selectItem itemLabel="Reprovado" itemValue="Reprovado" />
+							</h:selectOneListbox>
+
+						</div>
+
+					</div>
+
+					<div class="rule"></div>
+					<div class="form-footer">
+						<h:commandButton styleClass="button" value="Salvar"
+							action="#{notaController.alterar}"
+							onclick="return validarFormulario();" />
+						<p></p>
+						<h:commandButton styleClass="button2" value="Excluir"
+							action="#{notaController.excluir}" />
+
+					</div>
+				</div>
+			</h:form>
+		</div>
+	</f:view>
+</body>
+
+</html>
