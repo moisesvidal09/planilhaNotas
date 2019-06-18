@@ -5,9 +5,16 @@
 	xmlns:ui="http://java.sun.com/jsf/facelets">
 
 <head>
+<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
 <link rel="StyleSheet" type="text/css" href="../../css/estilo.css"></link>
- <script type="text/javascript" src="../js/criarNota.js"
-	charset="ISO-8859-1" /> 
+<script type="text/javascript" src="../js/criarNota.js"
+	charset="ISO-8859-1" />
+<script type="text/javascript">
+	jQuery(function($) {
+		$("input.data").mask("00/00/0000");
+	});
+</script>
 <style>
 body {
 	background:
@@ -45,7 +52,7 @@ body {
 
 						<div class="row">
 							<h:outputLabel value="Data Avaliacao " />
-							<h:inputText id="dataAvaliacao"
+							<h:inputText id="dataAvaliacao" styleClass="data"
 								value="#{notaController.notaBean.dataAvaliacao}">
 								<f:convertDateTime pattern="dd/MM/yyyy" />
 							</h:inputText>

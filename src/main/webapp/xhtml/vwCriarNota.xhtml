@@ -7,10 +7,19 @@
 
 
 <head>
+<script type="text/javascript" src="../../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../js/jquery.mask.min.js"></script>
 <link rel="StyleSheet" type="text/css" href="../../css/estilo.css"></link>
 <script type="text/javascript" src="../js/criarNota.js"
 	charset="ISO-8859-1" />
 
+<script type="text/javascript">
+
+jQuery(function($){
+    $("input.data").mask("00/00/0000");
+  });
+
+</script>
 
 <style>
 body {
@@ -44,16 +53,16 @@ body {
 
 						<div class="row">
 							<h:outputLabel value="Matricula " />
-							<h:inputText id="matricula"
+							<h:inputText id="matricula" 
 								value="#{notaController.notaBean.matricula}" size="8"
-								maxlength="8" />
+								maxlength="12" />
 						</div>
 
 
 
 						<div class="row">
 							<h:outputLabel value="Data Avaliacao " />
-							<h:inputText data-mask="00/00/0000" id="dataAvaliacao"
+							<h:inputText id="dataAvaliacao" styleClass="data"
 								value="#{notaController.notaBean.dataAvaliacao}" maxlength="10">
 								<f:convertDateTime pattern="dd/MM/yyyy" />
 							</h:inputText>
